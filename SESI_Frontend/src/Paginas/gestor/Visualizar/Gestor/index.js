@@ -10,7 +10,7 @@ const Gestor = () => {
 
   let gestores = []
   useEffect(() => {
-    axios.post("http://10.105.75.146:24/listar",{
+    axios.post("http://20.197.230.238:24/listar",{
       cargo: 'Gestor'
     })
     .then((res) => {

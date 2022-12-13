@@ -54,7 +54,7 @@ const Solicitar = () => {
   };
 
   const buscarAtleta = () => {
-    Axios.post("http://10.105.75.146:24/listarAtleta",{
+    Axios.post("http://20.197.230.238:24/listarAtleta",{
       cpf: cpf,
     })
     .then((res) => {
@@ -77,7 +77,7 @@ const Solicitar = () => {
   }
 
   const solicitarMedico = () => {
-    axios.post('http://10.105.75.146:24/solicitarMedico',{
+    axios.post('http://20.197.230.238:24/solicitarMedico',{
       nome: medicoValue,
     })
     .then((res) => {
@@ -91,7 +91,7 @@ const Solicitar = () => {
   let nomeMedico = [];
   let idsMedico = [];
   useEffect(() => {
-    axios.get('http://10.105.75.146:24/listarMedico')
+    axios.get('http://20.197.230.238:24/listarMedico')
     .then((res) => {
       for(let cont = 0; cont < res.data.length; cont++){
         nomeMedico.push(res.data[cont].nome);
@@ -103,7 +103,7 @@ const Solicitar = () => {
   }, [])
 
   const solicited = (id) => {
-    axios.put("http://10.105.75.146:24/solicitarAtleta",{
+    axios.put("http://20.197.230.238:24/solicitarAtleta",{
       cpf: cpf,
       idmedico: id
     })

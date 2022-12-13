@@ -8,7 +8,7 @@ function Tabela({ atleta }) {
 
 
   useEffect(() => {
-    Axios.get(`http://10.105.75.146:24/medico/verExameEnviado/${atleta}`)
+    Axios.get(`http://20.197.230.238:24/medico/verExameEnviado/${atleta}`)
       .then((response) => response.data)
       .then((response) => {
         console.log(response)
@@ -46,7 +46,7 @@ function Tabela({ atleta }) {
 
   function avaliar() {
 
-    Axios.put(`http://10.105.75.146:24/medico/avaliarExame/${idexame}`, {
+    Axios.put(`http://20.197.230.238:24/medico/avaliarExame/${idexame}`, {
       situacao : situacao
     }).then((response) => console.log(response))
     .then((response) => alert(response.msg))

@@ -15,7 +15,7 @@ function AvalicacoesRecebidas({ atleta }) {
 
 
   useEffect(() => {
-    axios.post('http://10.105.75.146:24/medicoConv/verAtletas', {
+    axios.post('http://20.197.230.238:24/medicoConv/verAtletas', {
       atletas : atleta
     })
     .then((response) => response.data)

@@ -21,7 +21,7 @@ const Telas = () => {
   const [cargo, setCargo] = useState('')
 
   useEffect(() => {
-    axios.post('http://10.105.75.146:24/atleta/listar', {
+    axios.post('http://20.197.230.238:24/atleta/listar', {
       email : email
     }).then((response) => response.data)
     .then((response) => {

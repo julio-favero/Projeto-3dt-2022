@@ -12,7 +12,7 @@ function Login() {
   const [pswd, setPassword] = useState("");
 
   function handleLogin() {
-    Axios.post("http://10.105.75.146:24/login", {
+    Axios.post("http://20.197.230.238:24/login", {
       email: emailAccount,
       senha: pswd,
     }).then((response) => {

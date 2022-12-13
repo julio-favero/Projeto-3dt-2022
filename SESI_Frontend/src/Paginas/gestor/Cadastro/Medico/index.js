@@ -80,7 +80,7 @@ const Medico = (props) => {
   };
 
   const cadastro = () =>{
-    axios.post("http://10.105.75.146:24/cadastro", {
+    axios.post("http://20.197.230.238:24/cadastro", {
       cargo: "Médico",
       nome: primeiro_nome,
       cpf: parseInt(cpf),

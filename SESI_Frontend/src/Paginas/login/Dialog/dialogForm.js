@@ -26,7 +26,7 @@ export default function FormDialog(props) {
   };
 
   const handleEditGame = () => {
-    Axios.put("http://10.105.75.146:24/edit", {
+    Axios.put("http://20.197.230.238:24/edit", {
       id: editValues.id,
       name: editValues.name,
       gols: editValues.gols,
@@ -47,7 +47,7 @@ export default function FormDialog(props) {
   };
 
   const handleDeleteGame = () => {
-    Axios.delete(`http://10.105.75.146:24/delete/${editValues.id}`).then(() => {
+    Axios.delete(`http://20.197.230.238:24/delete/${editValues.id}`).then(() => {
       props.setListCard(
         props.listCard.filter((value) => {
           return value.id !== editValues.id;

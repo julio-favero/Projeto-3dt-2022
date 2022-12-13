@@ -42,7 +42,7 @@ const Gestor = (props) => {
   };
 
   const buscar = () => {
-    axios.post("http://10.105.75.146:24/listarTodos",{
+    axios.post("http://20.197.230.238:24/listarTodos",{
       cargo: props.cargo,
       cpf: cpf,
     })
@@ -61,7 +61,7 @@ const Gestor = (props) => {
   }
 
   const alterar = () => {
-    axios.put('http://10.105.75.146:24/alterar',{
+    axios.put('http://20.197.230.238:24/alterar',{
       cargo: props.cargo,
       cpf: cpf,
       nome: primeiro_nome,

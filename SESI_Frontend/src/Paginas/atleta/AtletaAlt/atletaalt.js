@@ -9,7 +9,7 @@ import { toast } from "react-toastify";
 function AlterarPerfil() {
 
   useEffect(() => {
-    Axios.get(`http://10.105.75.146:24/atleta/${email}`)
+    Axios.get(`http://20.197.230.238:24/atleta/${email}`)
       .then((res) => {
         setCpf(res.data[0].cpf)
         setModalidade(res.data[0].modalidade)
@@ -75,7 +75,7 @@ function AlterarPerfil() {
       toast.error("Houve um erro!");
     }
     else{
-      Axios.put("http://10.105.75.146:24/atleta/atualizarAtleta", {
+      Axios.put("http://20.197.230.238:24/atleta/atualizarAtleta", {
         email: email,
         tipo_tel: tipotel,
         telefone: numero
@@ -97,7 +97,7 @@ function AlterarPerfil() {
     let confirm_password = document.getElementById("confirm_password").value;
 
     if (password === confirm_password) {
-      Axios.put("http://10.105.75.146:24/atleta/atualizarAtleta", {
+      Axios.put("http://20.197.230.238:24/atleta/atualizarAtleta", {
         email: email,
         senha: senha,
         senha_nova: senha_nova

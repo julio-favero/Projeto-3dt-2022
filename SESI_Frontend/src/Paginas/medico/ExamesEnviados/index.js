@@ -9,7 +9,7 @@ function Tabela({id}) {
 
   console.log(id)
   useEffect(() => {
-      Axios.get(`http://10.105.75.146:24/medico/verExameEnviado/${id}`)
+      Axios.get(`http://20.197.230.238:24/medico/verExameEnviado/${id}`)
       .then((response) => response.data)
       .then((response) => {
         setDownload(response.msg)
@@ -36,12 +36,12 @@ function Tabela({id}) {
 
     if (telaSim === 'sim'){
       console.log(id_exame)
-        Axios.post(`http://10.105.75.146:24/medico/nome_medico_cov`,{
+        Axios.post(`http://20.197.230.238:24/medico/nome_medico_cov`,{
           nome: nomeMDC,
           idexame: id_exame
      })}
     else{
-      Axios.put('http://10.105.75.146:24/medico/att_stiuacao',{
+      Axios.put('http://20.197.230.238:24/medico/att_stiuacao',{
         idatleta: id,
         situacao: situacao
       }).then((res) => console.log(res))

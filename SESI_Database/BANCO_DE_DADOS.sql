@@ -258,13 +258,13 @@ SET foreign_key_checks = 0;
 
 /*------------------------- INSERT GESTOR ADM -------------------------*/
 
-insert into gestor_admins values (default,"rayane","54639920881","ray@gmail.com","ray1234",'F',"gestor admin", NOW(), NOW());
+insert into gestor_admins values (default,"rayane","54639920881","ray@gmail.com","$2b$04$FChWoTeOpUVpNTD43Aumfe/a5Y8oS58.vjosjBN7I.9ooFBLag2Xe",'F',"gestor admin", NOW(), NOW());
 
 /*------------------------- INSERT GESTOR -------------------------*/
 
 insert into gestores values (default,"Vinicius","53899079817","zile1234","vinicius@gmail.com",'M',"gestor", NOW(), NOW(),"1");
 insert into gestores values (default,"Wesley","25694874123","ws1234","ws@gmail.com",'M',"gestor",NOW(), NOW(),"1");
 insert into gestores values (default,"Stefanny","25694874123","stefanny1234","stefanny@gmail.com",'F',"gestor",NOW(), NOW(),"1");
-insert into gestores values (default,"Paula","45899256374","paula1234","paula@gmail.com",'F',"gestor",NOW(), NOW(),"1");
+insert into gestores values (default,"Paula","45899256374","$2b$04$FChWoTeOpUVpNTD43Aumfe/a5Y8oS58.vjosjBN7I.9ooFBLag2Xe","paula@gmail.com",'F',"gestor",NOW(), NOW(),"1");
 
 INSERT INTO atletas VALUES (DEFAULT, 'lira', '25698745632',"lira@gmail.com", '$2b$04$FChWoTeOpUVpNTD43Aumfe/a5Y8oS58.vjosjBN7I.9ooFBLag2Xe', '2000/05/20', 'F','VOLÊI','LÍBERO','ATLETA', 'VOLÊI PRAIA',"SOLICITADO",'PENDENTE', NOW(), NOW(), '1', '1');

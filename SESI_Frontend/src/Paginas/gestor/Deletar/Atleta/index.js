@@ -41,7 +41,7 @@ function Atleta(props) {
   };
 
   const buscar = () => {
-    axios.post("http://10.105.75.146:24/listarTodos",{
+    axios.post("http://20.197.230.238:24/listarTodos",{
       cargo: props.cargo,
       cpf: cpf,
     })
@@ -58,7 +58,7 @@ function Atleta(props) {
   }
 
   const deletar = () =>{
-    axios.post('http://10.105.75.146:24/deletar', {
+    axios.post('http://20.197.230.238:24/deletar', {
       cargo: props.cargo,
       cpf: cpf
     })
