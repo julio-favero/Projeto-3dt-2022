@@ -22,7 +22,7 @@ function AvalicacoesRecebidas({idMedico}) {
   const [validar, setValidar] = useState(false)
 
   useEffect(() => {
-    Axios.get(`http://20.197.230.238:24/medico/solicited/${idMedico}`)
+    Axios.get(`http://4.228.66.252:24/medico/solicited/${idMedico}`)
       .then((res) => {
         array_nomes = []
         array_id = []

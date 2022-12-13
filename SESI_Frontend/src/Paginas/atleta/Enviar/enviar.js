@@ -25,7 +25,7 @@ function AvalicacoesPendentes() {
   useEffect(() => {
     arrayTipo = []
     arrayIndex = []
-    Axios.get(`http://20.197.230.238:24/atleta/verExamesSolicitados/${email}`)
+    Axios.get(`http://4.228.66.252:24/atleta/verExamesSolicitados/${email}`)
       .then((res) => {
         setDados(res.data);
         for(let x = 0; x < res.data.length; x++){
@@ -42,7 +42,7 @@ function AvalicacoesPendentes() {
 
   useEffect(() => {
     if (deletarurl === true) {
-      Axios.put(`http://20.197.230.238:24/atleta/modificarPdf/${email}`, {
+      Axios.put(`http://4.228.66.252:24/atleta/modificarPdf/${email}`, {
         decisao: false,
       })
         .then((res) => res)
@@ -54,7 +54,7 @@ function AvalicacoesPendentes() {
   }, [deletarurl]);
 
   async function ViewPdf() {
-    await Axios.put(`http://20.197.230.238:24/atleta/modificarPdf/${email}`, {
+    await Axios.put(`http://4.228.66.252:24/atleta/modificarPdf/${email}`, {
       decisao: true,
     }).then((res) => {
       setPdf(res.data.msg);
@@ -67,7 +67,7 @@ function AvalicacoesPendentes() {
       var formData = new FormData();
     formData.append("pdfatleta", arquivo);
     formData.append("idexame", id_exame)
-    Axios.put(`http://20.197.230.238:24/atleta/enviarPdf/${email}`, formData,{
+    Axios.put(`http://4.228.66.252:24/atleta/enviarPdf/${email}`, formData,{
       headers: {
         "Content-Type": "multipart/form-data",
       },

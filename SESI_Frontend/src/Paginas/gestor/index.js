@@ -25,7 +25,7 @@ const Medico = () => {
   ];
 
   useEffect(() => {
-    axios.get(`http://20.197.230.238:24/verGestor/${email}`)
+    axios.get(`http://4.228.66.252:24/verGestor/${email}`)
     .then((response) => response.data)
     .then((response) => {
       setNome(response.nome)

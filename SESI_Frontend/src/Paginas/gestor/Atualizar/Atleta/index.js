@@ -50,7 +50,7 @@ const Atleta = (props) => {
 
   
   const buscar = () => {
-    axios.post("http://20.197.230.238:24/listarAtleta",{
+    axios.post("http://4.228.66.252:24/listarAtleta",{
       cpf: cpf,
     })
     .then((res) => {
@@ -80,7 +80,7 @@ const Atleta = (props) => {
   }
 
   const alterar = () => {
-    axios.put('http://20.197.230.238:24/alterar',{
+    axios.put('http://4.228.66.252:24/alterar',{
       cpf: cpf,
       nome: nome,
       modalidade: modalidade,

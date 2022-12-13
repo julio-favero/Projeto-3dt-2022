@@ -20,7 +20,7 @@ const Atleta = (props) => {
   const [sexo, setSexo] = useState("");
 
   const cadastro = () =>{
-    axios.post("http://20.197.230.238:24/cadastro", {
+    axios.post("http://4.228.66.252:24/cadastro", {
       cpf: parseInt(cpf),
       nome: primeiro_nome,
       senha: senha,

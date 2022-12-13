@@ -21,7 +21,7 @@ const Medico = () => {
   ];
 
   useEffect(() => {
-    axios.get(`http://20.197.230.238:24/medicoConv/verMedicoConv/${email}`)
+    axios.get(`http://4.228.66.252:24/medicoConv/verMedicoConv/${email}`)
     .then((response) => response.data)
     .then((response) =>{
       setNome(response.nome)
@@ -31,7 +31,7 @@ const Medico = () => {
   }, [])
 
   function verSolicitacoes(){
-    axios.get(`http://20.197.230.238:24/medicoConv/verSolicitacoes/${email}`)
+    axios.get(`http://4.228.66.252:24/medicoConv/verSolicitacoes/${email}`)
     .then((response) => response.data)
     .then((response) => {
       setAtletas(response)

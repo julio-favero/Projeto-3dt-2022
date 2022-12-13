@@ -41,7 +41,7 @@ function Medico_parceiro(props) {
   };
 
   const buscar = () => {
-    axios.post("http://20.197.230.238:24/listarTodos",{
+    axios.post("http://4.228.66.252:24/listarTodos",{
       cargo: props.cargo,
       cpf: cpf,
     })
@@ -58,7 +58,7 @@ function Medico_parceiro(props) {
   }
 
   const deletar = () =>{
-    axios.post('http://20.197.230.238:24/deletar', {
+    axios.post('http://4.228.66.252:24/deletar', {
       cargo: props.cargo,
       cpf: cpf
     })

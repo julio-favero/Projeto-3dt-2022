@@ -63,7 +63,7 @@ const Gestor = () => {
   };
 
   const cadastro = () =>{
-    axios.post("http://20.197.230.238:24/cadastro", {
+    axios.post("http://4.228.66.252:24/cadastro", {
       cargo: "Gestor",
       cpf: parseInt(cpf),
       nome: primeiro_nome,

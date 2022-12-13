@@ -20,7 +20,7 @@ const recuperarSenhaRoutes = require('./routes/recuperarSenhaRoutes')
 //Chama a o express criando uma nova aplicação dentro da variavel app
 const app = express();
 app.use(cors({
-    origin: "http://20.197.230.238:8080",
+    origin: "http://4.228.66.252:8080",
     credentials: true
 }));
 

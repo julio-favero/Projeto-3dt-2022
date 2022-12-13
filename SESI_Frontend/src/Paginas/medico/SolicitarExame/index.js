@@ -23,7 +23,7 @@ function SolicitarExame({ cpfSolicited }) {
 
 
   useEffect(() => {
-    Axios.get('http://20.197.230.238:24/medico/notSolicited')
+    Axios.get('http://4.228.66.252:24/medico/notSolicited')
     .then((res) =>{
         array_nomes = []
         array_modalidade = []
@@ -41,7 +41,7 @@ function SolicitarExame({ cpfSolicited }) {
 
 
 function enviar_exame(){
-  Axios.post('http://20.197.230.238:24/medico/solicitarExame', {
+  Axios.post('http://4.228.66.252:24/medico/solicitarExame', {
       tipo: tipo,
       id_exame_atl : id_usable,
       pdfexame : 'Não enviado'
