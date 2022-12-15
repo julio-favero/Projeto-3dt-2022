@@ -213,7 +213,7 @@ class medicoControllers {
         for(let x = 0; x < request.length; x++){
         if(request[x]['pdfatleta'] != null){
             fs.writeFileSync(path.join(__dirname, '../download/' + request[x]['idexame'] + '.pdf'), request[x]['pdfatleta'])
-            arrayExame.push(`http://localhost:3001/${request[x]['idexame']}.pdf`)
+            arrayExame.push(`http://4.228.66.252:24/${request[x]['idexame']}.pdf`)
             arrayId.push(request[x]['idexame']) 
             }
         else(

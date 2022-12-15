@@ -160,7 +160,7 @@ class atletaControllers {
         ),
         request[0]["pdfexame"]
       );
-      res.send({ msg: `http://localhost:3001/guia_exame-${request[0].idexame}.pdf` }); // envia a resposta para o front
+      res.send({ msg: `http://4.228.66.252:24/guia_exame-${request[0].idexame}.pdf` }); // envia a resposta para o front
     }
   };
 
