@@ -1,8 +1,8 @@
 # SESI-Devops
-Os comandos presentes nesse repositório servem como teste e vizualização dos participantes da organização, em construção.  
 
-## SESI-Frontend
+Para iniciar o projeto use o comando a baixo
+
 ```bash
 docker-compose up --build
 ````
-# SESI-Devops
+
